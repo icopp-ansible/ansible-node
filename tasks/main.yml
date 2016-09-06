@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Node.js via Homebrew
+  package:
+    name: node
+    state: latest
+  when: ansible_os_family == "Darwin"
